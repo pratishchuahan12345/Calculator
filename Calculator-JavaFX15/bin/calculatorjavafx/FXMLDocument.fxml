@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="548.0" prefWidth="454.0" style="-fx-background-color: black;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculatorjavafx.FXMLDocumentController">
+    <children>
+        <TextField fx:id="tf" alignment="CENTER_RIGHT" editable="false" layoutX="11.0" layoutY="71.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="29.0" prefWidth="432.0">
+            <font>
+                <Font size="43.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="tf2" alignment="CENTER_RIGHT" editable="false" layoutX="11.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="432.0">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </TextField>
+        <GridPane layoutX="-1.0" layoutY="119.0" prefHeight="430.0" prefWidth="454.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Button fx:id="two" layoutX="242.0" layoutY="262.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="80.0" prefWidth="89.0" text="2" GridPane.columnIndex="1">
+                    <font>
+                        <Font size="44.0" />
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color opacity="0.5058823823928833" />
+                                    </color></Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.9490196108818054" green="0.9137254953384399" blue="0.9137254953384399" opacity="0.5799999833106995" />
+                                    </color></Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Button>
+
+                <Button fx:id="three" layoutX="242.0" layoutY="262.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="80.0" prefWidth="89.0" text="3" textFill="#f0e9e92e" GridPane.columnIndex="2">
+                    <font>
+                        <Font size="44.0" />
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color opacity="0.5058823823928833" />
+                                    </color></Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.9490196108818054" green="0.9137254953384399" blue="0.9137254953384399" opacity="0.5799999833106995" />
+                                    </color></Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Button>
+
+                <Button fx:id="six" layoutX="242.0" layoutY="262.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="80.0" prefWidth="89.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="44.0" />
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color opacity="0.5058823823928833" />
+                                    </color></Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.9490196108818054" green="0.9137254953384399" blue="0.9137254953384399" opacity="0.5799999833106995" />
+                                    </color></Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Button>
+
+                <Button fx:id="five" layoutX="242.0" layoutY="262.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="80.0" prefWidth="89.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="44.0" />
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color opacity="0.5058823823928833" />
+                                    </color></Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.9490196108818054" green="0.9137254953384399" blue="0.9137254953384399" opacity="0.5799999833106995" />
+                                    </color></Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Button>
+
+                <Button fx:id="four" layoutX="242.0" layoutY="262.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="80.0" prefWidth="89.0" text="4" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="44.0" />
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color opacity="0.5058823823928833" />
+                                    </color></Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.9490196108818054" green="0.9137254953384399" blue="0.9137254953384399" opacity="0.5799999833106995" />
+                                    </color></Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Button>
+
+                <Button fx:id="seven" layoutX="242.0" layoutY="262.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="80.0" prefWidth="89.0" text="7" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="44.0" />
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color opacity="0.5058823823928833" />
+                                    </color></Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.9490196108818054" green="0.9137254953384399" blue="0.9137254953384399" opacity="0.5799999833106995" />
+                                    </color></Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Button>
+
+                <Button fx:id="eight" layoutX="242.0" layoutY="262.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="80.0" prefWidth="89.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="44.0" />
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color opacity="0.5058823823928833" />
+                                    </color></Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.9490196108818054" green="0.9137254953384399" blue="0.9137254953384399" opacity="0.5799999833106995" />
+                                    </color></Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Button>
+
+                <Button fx:id="nine" layoutX="242.0" layoutY="262.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="80.0" prefWidth="89.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="44.0" />
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color opacity="0.5058823823928833" />
+                                    </color></Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.9490196108818054" green="0.9137254953384399" blue="0.9137254953384399" opacity="0.5799999833106995" />
+                                    </color></Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Button>
+
+                <Button fx:id="equals" layoutX="242.0" layoutY="262.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#equals" prefHeight="80.0" prefWidth="89.0" text="=" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                    <font>
+                        <Font size="44.0" />
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color opacity="0.5058823823928833" />
+                                    </color></Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.9490196108818054" green="0.9137254953384399" blue="0.9137254953384399" opacity="0.5799999833106995" />
+                                    </color></Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Button>
+
+                <Button fx:id="zero" layoutX="242.0" layoutY="262.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="80.0" prefWidth="89.0" text="0" GridPane.rowIndex="3">
+                    <font>
+                        <Font size="44.0" />
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color opacity="0.5058823823928833" />
+                                    </color></Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.9490196108818054" green="0.9137254953384399" blue="0.9137254953384399" opacity="0.5799999833106995" />
+                                    </color></Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Button>
+
+
+                <Button fx:id="clear" layoutX="242.0" layoutY="262.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#clearText" prefHeight="80.0" prefWidth="89.0" text="CL" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                    <font>
+                        <Font size="35.0" />
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color opacity="0.5058823823928833" />
+                                    </color></Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.9490196108818054" green="0.9137254953384399" blue="0.9137254953384399" opacity="0.5799999833106995" />
+                                    </color></Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Button>
+
+
+                <Button fx:id="plus" layoutX="242.0" layoutY="262.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#add" prefHeight="80.0" prefWidth="89.0" text="+" textFill="#f2e9e92e" wrapText="true" GridPane.columnIndex="3">
+                    <font>
+                        <Font size="44.0" />
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color opacity="0.5058823823928833" />
+                                    </color></Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.9490196108818054" green="0.9137254953384399" blue="0.9137254953384399" opacity="0.5799999833106995" />
+                                    </color></Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Button>
+                <Button fx:id="division" layoutX="242.0" layoutY="262.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#divide" prefHeight="80.0" prefWidth="89.0" text="/" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                    <font>
+                        <Font size="44.0" />
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color opacity="0.5058823823928833" />
+                                    </color></Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.9490196108818054" green="0.9137254953384399" blue="0.9137254953384399" opacity="0.5799999833106995" />
+                                    </color></Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Button>
+
+                <Button fx:id="mult" layoutX="242.0" layoutY="262.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#multiply" prefHeight="80.0" prefWidth="89.0" text="*" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="44.0" />
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color opacity="0.5058823823928833" />
+                                    </color></Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.9490196108818054" green="0.9137254953384399" blue="0.9137254953384399" opacity="0.5799999833106995" />
+                                    </color></Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Button>
+
+                <Button fx:id="minus" layoutX="242.0" layoutY="262.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#substract" prefHeight="80.0" prefWidth="89.0" text="-" textFill="#f0e9e930" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="44.0" />
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color opacity="0.5058823823928833" />
+                                    </color></Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.9490196108818054" green="0.9137254953384399" blue="0.9137254953384399" opacity="0.5799999833106995" />
+                                    </color></Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Button>
+
+                <Button fx:id="one" layoutX="242.0" layoutY="262.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="80.0" prefWidth="89.0" text="1" textFill="#f0e9e92e">
+                    <font>
+                        <Font size="44.0" />
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color opacity="0.5058823823928833" />
+                                    </color></Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.9490196108818054" green="0.9137254953384399" blue="0.9137254953384399" opacity="0.5799999833106995" />
+                                    </color></Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Button>
+
+                <Button fx:id="power" layoutX="242.0" layoutY="262.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#power" prefHeight="87.0" prefWidth="90.0" text="p" GridPane.rowIndex="4">
+                    <font>
+                        <Font size="44.0" />
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color opacity="0.5058823823928833" />
+                                    </color></Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.9490196108818054" green="0.9137254953384399" blue="0.9137254953384399" opacity="0.5799999833106995" />
+                                    </color></Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Button>
+
+                <Button fx:id="remainder" layoutX="242.0" layoutY="262.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#remainder" prefHeight="80.0" prefWidth="89.0" text="\%" textFill="#f0ebeb54" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                    <font>
+                        <Font size="44.0" />
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color opacity="0.5058823823928833" />
+                                    </color></Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.9490196108818054" green="0.9137254953384399" blue="0.9137254953384399" opacity="0.5799999833106995" />
+                                    </color></Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Button>
+
+                <Button fx:id="dot" layoutX="242.0" layoutY="262.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="80.0" prefWidth="90.0" text="." wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                    <font>
+                        <Font size="72.0" />
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color opacity="0.5058823823928833" />
+                                    </color></Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.9490196108818054" green="0.9137254953384399" blue="0.9137254953384399" opacity="0.5799999833106995" />
+                                    </color></Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Button>
+
+                <Button fx:id="neg" layoutX="242.0" layoutY="262.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="80.0" prefWidth="89.0" text="-" textFill="#f0ebeb2f" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                    <font>
+                        <Font size="46.0" />
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color opacity="0.5058823823928833" />
+                                    </color></Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.9490196108818054" green="0.9137254953384399" blue="0.9137254953384399" opacity="0.5799999833106995" />
+                                    </color></Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Button>
+
+                <Button fx:id="and" layoutX="242.0" layoutY="262.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#bitand" prefHeight="81.0" prefWidth="90.0" text="&amp;" textFill="#f0e9e930" wrapText="true" GridPane.columnIndex="4">
+                    <font>
+                        <Font size="46.0" />
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color opacity="0.5058823823928833" />
+                                    </color></Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.9490196108818054" green="0.9137254953384399" blue="0.9137254953384399" opacity="0.5799999833106995" />
+                                    </color></Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Button>
+
+                <Button fx:id="or" layoutX="242.0" layoutY="262.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#bitor" prefHeight="80.0" prefWidth="89.0" text="|" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="44.0" />
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color opacity="0.5058823823928833" />
+                                    </color></Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.9490196108818054" green="0.9137254953384399" blue="0.9137254953384399" opacity="0.5799999833106995" />
+                                    </color></Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Button>
+
+                <Button fx:id="xor" layoutX="242.0" layoutY="262.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#bitxor" prefHeight="80.0" prefWidth="89.0" text="^" textFill="#f0ebeb56" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="2" >
+                    <font>
+                        <Font size="44.0" />
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color opacity="0.5058823823928833" />
+                                    </color></Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.9490196108818054" green="0.9137254953384399" blue="0.9137254953384399" opacity="0.5799999833106995" />
+                                    </color></Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Button>
+
+                <Button fx:id="shift" layoutX="242.0" layoutY="262.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#left" prefHeight="80.0" prefWidth="89.0" text="&lt;&lt;" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                    <font>
+                        <Font size="44.0" />
+                    </font>
+
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color opacity="0.5058823823928833" />
+                                    </color></Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.9490196108818054" green="0.9137254953384399" blue="0.9137254953384399" opacity="0.5799999833106995" />
+                                    </color></Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Button>
+
+                <Button fx:id="root" layoutX="242.0" layoutY="262.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#root" prefHeight="80.0" prefWidth="89.0" text="/-" textFill="#f0ebeb4a" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                    <font>
+                        <Font size="44.0" />
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color opacity="0.5058823823928833" />
+                                    </color></Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.9490196108818054" green="0.9137254953384399" blue="0.9137254953384399" opacity="0.5799999833106995" />
+                                    </color></Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Button>
+            </children>
+            <padding>
+                <Insets top="10.0" />
+            </padding>
+        </GridPane>
+    </children>
+</AnchorPane>
+        
